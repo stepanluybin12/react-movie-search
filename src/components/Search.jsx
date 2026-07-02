@@ -48,7 +48,7 @@ export class Search extends React.Component {
               onChange={this.handleFilter}
               checked={this.state.type === 'all'}
             />
-            <span>All</span>
+            <span style={{paddingLeft : '28px'}}>All</span>
           </label>
 
           <label>
@@ -60,7 +60,7 @@ export class Search extends React.Component {
               type="radio"
               checked={this.state.type === 'movie'}
             />
-            <span>movie</span>
+            <span style={{paddingLeft : '28px'}}>movie</span>
           </label>
 
           <label>
@@ -72,7 +72,7 @@ export class Search extends React.Component {
               onChange={this.handleFilter}
               checked={this.state.type === 'series'}
             />
-            <span>series</span>
+            <span style={{paddingLeft : '28px'}}>series</span>
           </label>
         </div>
       </div>
