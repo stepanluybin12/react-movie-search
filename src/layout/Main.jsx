@@ -4,7 +4,7 @@ import { Preloader } from "../components/Preloader"
 import { Search } from "../components/Search"
 
 
-const API_KEY = import.meta.env.REACT_APP_API_KEY
+const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
 
 
 export class Main extends React.Component{
