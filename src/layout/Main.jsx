@@ -18,8 +18,8 @@ export class Main extends React.Component{
     }
 
 
-    searchMovies = (str) => {
-        fetch(`http://www.omdbapi.com/?apikey=8064aa1f&s=${str}`)
+    searchMovies = (str, type='all') => {
+        fetch(`http://www.omdbapi.com/?apikey=8064aa1f&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
             .then(response => response.json())
             .then(data => this.setState({movies : data.Search}))
     }
